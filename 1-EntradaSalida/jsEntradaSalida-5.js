@@ -15,3 +15,17 @@ function mostrar()
 
 }
 
+/*
+
+    var nombre;
+    var edad;
+    var mensaje;
+
+    nombre = document.getElementById("elNombre").value;
+
+    edad = document.getElementById("laEdad").value; 
+
+    mensaje = "Usted se llama " + nombre + "    Tiene: " + edad + " años.";
+
+    alert (mensaje);
+ */
