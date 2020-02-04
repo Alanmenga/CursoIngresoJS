@@ -6,12 +6,24 @@ function sumar()
     var numeroUno;
     var numeroDos;
     var numeroDosParseado;
+    var resultado;
 
+    
+
+    
     numeroUno = parseInt(document.getElementById("numeroUno").value);
     numeroDos = document.getElementById("numeroDos").value;
     numeroDosParseado = parseInt(numeroDos);
     
-    alert (numeroUno + numeroDosParseado);
+    resultado = numeroUno + numeroDosParseado ;
+    
+
+/*
+    numeroUno = document.getElementById("numeroUno").value;
+    numeroDos = document.getElementById("numeroDos").value; 
+
+*/
+    alert (resultado);
 
 }
 
