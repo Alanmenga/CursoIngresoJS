@@ -4,3 +4,9 @@ function mostrar()
 	alert("Esto funciona de maravilla");
 }
 
+/* 
+
+	var mensaje = "Esto funciona de maravilla";
+	alert (mensaje);
+
+*/
