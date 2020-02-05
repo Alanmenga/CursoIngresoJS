@@ -5,14 +5,18 @@ en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
      var numeroUno;
-     var numeroDos;
-     
+     var descuento;
+     var valortotal; 
 
      numeroUno = parseInt(document.getElementById("sueldo").value);
 
-     numeroDos = numeroUno * 0.1 + numeroUno ;
+     //numeroDos = numeroUno * 0.1 + numeroUno ;
+
+     descuento = (numeroUno*10) /100 ;
      
-     document.getElementById("resultado").value = numeroDos;
+     valortotal = numeroUno + descuento ;
+     
+     document.getElementById("resultado").value = valortotal;
 
     
 	
