@@ -15,14 +15,41 @@ function Rectangulo ()
     ancho = parseInt(document.getElementById("Ancho").value) ;
     radio = parseInt(document.getElementById("Radio").value) ;
 
-    
+    resultado = ( largo * 2 + ancho *2 ) * 3 ;
+
+    alert ("La cantidad de alambre necesaria es: " + resultado);
 
 }
 function Circulo () 
 {
-	
+	var largo;
+    var ancho;
+    var radio;
+    var resultado;
+
+    largo = parseInt(document.getElementById("Largo").value) ;
+    ancho = parseInt(document.getElementById("Ancho").value) ;
+    radio = parseInt(document.getElementById("Radio").value) ;
+
+    resultado = ( radio * 2 * 3.14 ) *3 ;
+
+    alert ("La cantidad de alambre necesaria es: " + resultado);
 }
 function Materiales () 
 {
-	
+	var largo;
+    var ancho;
+    var radio;
+    var cemento;
+    var cal;
+
+    largo = parseInt(document.getElementById("Largo").value) ;
+    ancho = parseInt(document.getElementById("Ancho").value) ;
+    radio = parseInt(document.getElementById("Radio").value) ;
+
+    resultado = ( largo * ancho ) ;
+    cemento = ( resultado ) * 2 ;
+    cal = ( resultado ) *3 ;
+
+    alert ("Bolsas de cemento necesarias: " + cemento  +   "\n"  + "Bolsas de cal necesarias: " + cal);
 }
