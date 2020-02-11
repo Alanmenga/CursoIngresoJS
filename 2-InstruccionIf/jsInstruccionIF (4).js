@@ -18,4 +18,8 @@ if ( edad < 13)
 
 { alert ("Usted es mayor de edad"); }
 
+
+// if (edad >= 13 && edad <=17)
+
+
 }//FIN DE LA FUNCIÓN
