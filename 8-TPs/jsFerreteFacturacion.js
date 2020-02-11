@@ -5,18 +5,22 @@ C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
 function Sumar () 
 {
+    //Declarando las variables
     var nroUno;
     var nroDos;
     var nroTres;
     var resultado;
 
+
+    //Elnumero ingresado en la pantalla llegue a la variable
     nroUno = parseInt(document.getElementById("PrecioUno").value);
     nroDos = parseInt(document.getElementById("PrecioDos").value);
     nroTres = parseInt(document.getElementById("PrecioTres").value);
 
     resultado = nroUno + nroDos + nroTres ;
+   alert ("La suma es: " + resultado); 
 
-    alert ("La suma es: " + resultado);
+    /*alert ("La suma es: " + (nroUno+nroDos+nroTres) ); */
 
 }
 function Promedio () 
@@ -26,9 +30,9 @@ function Promedio ()
     var nroTres;
     var resultado;
 
-    nroUno = parseInt(document.getElementById("PrecioUno").value);
-    nroDos = parseInt(document.getElementById("PrecioDos").value);
-    nroTres = parseInt(document.getElementById("PrecioTres").value);
+    nroUno = parseFloat(document.getElementById("PrecioUno").value);
+    nroDos = parseFloat(document.getElementById("PrecioDos").value);
+    nroTres = parseFloat(document.getElementById("PrecioTres").value);
 
     resultado = (nroUno + nroDos + nroTres) / 3 ;
 
