@@ -8,14 +8,14 @@ function mostrar()
 
    if ( nota >= 4 && nota <9)
 
-   {alert ("Aprobo"+nota);}
+   {alert ("Aprobo "+nota);}
 
    else if ( nota >= 9 )
 
-   {alert ("Excelente"+nota);}
+   {alert ("Excelente "+nota);}
 
    else if ( nota < 4 )
 
-   {alert ("Vamos, la proxima se puede"+nota);}
+   {alert ("Vamos, la proxima se puede "+nota);}
 
 }//FIN DE LA FUNCIÓN
