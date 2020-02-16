@@ -12,14 +12,25 @@ function CalcularPrecio ()
 {
  var cantidad;
  var marca;
- var resultado
+ var resultado;
+ var totalconDesc;
  
  cantidad = parseInt(document.getElementById("Cantidad").value);
  marca = document.getElementById("Marca").value;
 
  if ( cantidad >= 6 )
  {
-    
-    document.getElementById("resultado").value = resultado 
+    resultado = (cantidad * 35);
+
+    totalconDesc = ( resultado * 50 ) / 100 ;
+
+    document.getElementById("precioDescuento").value = totalconDesc ; 
  }
+else if ( cantidad ==5 && marca == "ArgentinaLuz")
+
+
+
+
 }
+
+
