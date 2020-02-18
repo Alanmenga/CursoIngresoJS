@@ -6,9 +6,15 @@ function mostrar()
 
 do {
 	  nroIngresado = parseInt(prompt("Ingrese un numero: "));
+	  while (isNaN(nroIngresado)) {
+		  nroIngresado = prompt ("Lo que ingresaste no era un nro, volve a ingresarlo:");
+		  nroIngresado = parseInt(nroIngresado);
+	      }
 	  contador++;
 	  acumulador = nroIngresado + acumulador;
-	}while (contador<5)
+	  console.log ("El contador es: "+contador);
+	  console.log ("Se encuentra acumulando: "+acumulador);
+	}while (contador<5);
 
 
 document.getElementById('suma').value=acumulador;
