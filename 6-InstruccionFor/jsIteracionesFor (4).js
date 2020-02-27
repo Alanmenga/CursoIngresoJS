@@ -4,7 +4,7 @@ function mostrar()
 
     for (i=1;  ;i++){
         document.write("Aprendiendo JavaScript <br>");
-        if (i>5){
+        if (){
         break;
         }
     }
