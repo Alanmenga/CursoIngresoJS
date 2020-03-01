@@ -1,10 +1,11 @@
 function mostrar()
 {
     var i;
+    var repeticiones 
 
-    for (i=1;  ;i++){
-        document.write("Aprendiendo JavaScript <br>");
-        if (){
+    for (i=0;  ;i++){
+        repeticiones = prompt ("Ingresa un caracter: ");
+        if (repeticiones=="break"){
         break;
         }
     }
