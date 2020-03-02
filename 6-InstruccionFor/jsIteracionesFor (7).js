@@ -10,20 +10,11 @@ function mostrar()
         nroIngresado = parseInt(prompt("Lo que ingresaste no es un nro, Volve aintentarlo: "));
     }
     //Sabemos que lo ingresado es un numero
-    for (i=1; ;i++){
-        var resto;
-        resto = nroIngresado&i;
-        console.log("El resto es: " + resto);
-        if (Number.isFinite(resto)){
+    for ( i=1 ; i<=nroIngresado ; i++ ){
+        if (nroIngresado%i==0){
             cantDivisores++;
             document.write( i + "<br>");
         }
-        if ( i >= nroIngresado){
-            console.log("i: "+ i + "nro ingresado: " + nroIngresado);
-            break
-
-        }
-
     }
     alert ("La cantidad de divisores es: " + cantDivisores);
 
