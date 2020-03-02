@@ -12,15 +12,11 @@ function mostrar()
         //sabemos que el dato es un numero
     console.log ("El nro ingresado es :"+nroIngresado);
     
-    for (i=1; ;i++) {
-        var resto=i%2;
-			if (resto==0){
+    for (i=1; i<=nroIngresado ;i++) {
+			if (i%2==0){
 		    //es un numero par
             cantPares++;
             document.write( i + "<br>"); 
-            }
-        if ( i >= nroIngresado){
-            break
             }
         console.log ("La cantidad de pares es: "+cantPares);
     }
