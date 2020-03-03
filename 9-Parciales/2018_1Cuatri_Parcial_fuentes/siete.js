@@ -40,4 +40,6 @@ function mostrar()
         + "\nCantidad Varones mas 6: " + contadorVMas6
     );
 
+
+    
 }
