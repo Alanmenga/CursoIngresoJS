@@ -16,18 +16,18 @@ function mostrar()
      var seguir;
 
      do {
-         //Validaciones
+         //Ingreso y validaciones
          marca = prompt("Ingrese la marca del producto: ");
-         while ( marca=="" && marca==null ) {
+         while ( marca=="" || marca==null ) {
              marca = prompt("Marca incorrecta. Ingrese la marca del producto: ");
          }
-         peso = parseInt(prompt("Ingrese el peso del producto:"));
+         peso = parseInt(prompt("Ingrese el peso del producto(1;100):"));
          while ( peso<1 || peso>100 || isNaN(peso)){
-             peso = parseInt(prompt("Peso incorrecto. Ingrese el peso del producto: "));
+             peso = parseInt(prompt("Peso incorrecto. Ingrese el peso del producto(1;100): "));
          }
-         temperatura = parseInt(prompt("Ingrese la temperatura de almacenamiento del producto: "));
+         temperatura = parseInt(prompt("Ingrese la temperatura de almacenamiento del producto(-30;30): "));
          while ( temperatura<-30 || temperatura>30 || isNaN(temperatura)){
-             temperatura = parseInt(prompt("Temperatura incorrecta. Ingrese la temperatura de almacenamiento: "));
+             temperatura = parseInt(prompt("Temperatura incorrecta. Ingrese la temperatura de almacenamiento(-30;30): "));
          }
          //A)Cantidad de temperaturas pares
          if (temperatura%2==0){
